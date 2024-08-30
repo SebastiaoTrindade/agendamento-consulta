@@ -1,0 +1,24 @@
+<div class="container mt-5">
+  <h2>Cadastre-se</h2>
+  <%= form_with model: @usuario, url: usuarios_path, class: "form-horizontal", local: true do |f| %>
+    <div class="form-group">
+      <%= f.label :nome, class: "control-label" %>
+      <%= f.text_field :nome, class: "form-control" %>
+    </div>
+    <div class="form-group">
+      <%= f.label :email, class: "control-label" %>
+      <%= f.email_field :email, class: "form-control" %>
+    </div>
+    <div class="form-group">
+      <%= f.label :password, class: "control-label" %>
+      <%= f.password_field :password, class: "form-control" %>
+    </div>
+    <div class="form-group">
+      <%= f.label :password_confirmation, "Confirmação de Senha", class: "control-label" %>
+      <%= f.password_field :password_confirmation, class: "form-control" %>
+    </div>
+    <div class="form-group">
+      <%= f.submit "Cadastrar", class: "btn btn-primary" %>
+    </div>
+  <% end %>
+</div>

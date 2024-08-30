@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  paciente: one
+  psicopedagogo: one
+  data_hora: 2024-08-29 22:38:42
+  status: 1
+
+two:
+  paciente: two
+  psicopedagogo: two
+  data_hora: 2024-08-29 22:38:42
+  status: 1

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  psicopedagogo: one
+  dia_semana: 1
+  hora_inicio: 2024-08-29 22:42:51
+  hora_fim: 2024-08-29 22:42:51
+
+two:
+  psicopedagogo: two
+  dia_semana: 1
+  hora_inicio: 2024-08-29 22:42:51
+  hora_fim: 2024-08-29 22:42:51

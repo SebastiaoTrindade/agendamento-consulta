@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AgendamentoConsultas</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>  
+    <% if notice %>
+      <div class="alert alert-success" id="flash_notice">
+        <%= notice %>
+      </div>
+    <% end %>
+
+    <% if alert %>
+      <div class="alert alert-danger" id="flash_alert">
+        <%= alert %>
+      </div>
+    <% end %>
+
+    <script>
+      // Tempo em milissegundos antes do alert desaparecer (por exemplo, 5 segundos)
+        setTimeout(function() {
+        var noticeElement = document.getElementById('flash_notice');
+        var alertElement = document.getElementById('flash_alert');
+        if (noticeElement) {
+          noticeElement.style.display = 'none';
+        }
+        if (alertElement) {
+          alertElement.style.display = 'none';
+        }
+      }, 5000); // 5000 milissegundos = 5 segundos
+    </script>
+    
+    <%= yield %>
+  </body>
+</html>
