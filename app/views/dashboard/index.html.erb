@@ -10,15 +10,16 @@
         
 </head>
 <body>
-
 <div id="wrapper">
     <!-- Sidebar -->
     <div id="sidebar">
         <div class="sidebar-heading">Sistema</div>
         <a href="#" class="active"><i class="fas fa-fw fa-tachometer-alt"></i> Dashboard</a>
-        <a href="#"><i class="fas fa-fw fa-cash-register"></i> PDV de Vendas</a>
-        <a href="#"><i class="fas fa-fw fa-boxes"></i> Controle de Estoque</a>
-        <a href="#"><i class="fas fa-fw fa-user"></i> Usuários</a>
+        <a href="#" data-bs-toggle="modal" data-bs-target="#userModal">
+            <i class="fas fa-fw fa-user"></i> Usuários
+        </a>        
+        <a href="#"><i class="fa-regular fa-calendar-check"></i> Agendamentos</a>
+        <a href="#"><i class="fa-solid fa-user-doctor"></i> Psicopedadoga</a>        
         <a href="#"><i class="fa-solid fa-dolly"></i> Produtos</a>
         <a href="#"><i class="fa-solid fa-users"></i> Fornecedores</a>
         <%= link_to logout_path, method: :delete, data: { confirm: "Tem certeza que deseja sair?" }, class: 'd-flex align-items-center' do %>
@@ -107,6 +108,17 @@
         </div>
     </div>
 </div>
+
+<!-- Content Wrapper -->
+    <div id="content-wrapper">
+      <%= yield %>
+    </div>
+
+    <!-- Modal de Cadastro de Usuários -->
+    <%= render 'usuarios/modal_form' %> <!-- Renderiza o modal -->
+
+<!-- Scripts do Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>

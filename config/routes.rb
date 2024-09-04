@@ -8,9 +8,10 @@ Rails.application.routes.draw do
   post 'login', to: 'sessions#create'
   get 'logout', to: 'sessions#destroy'
 
-  # # Rotas para usuários
-  # get 'signup', to: 'usuarios#new'
-  # post 'usuarios', to: 'usuarios#create'
+  # Rotas para usuários
+  get 'usuarios/new', as: 'new_usuario'
+  post 'usuarios', to: 'usuarios#create'
+  # get 'signup', to: 'usuarios#new'  
   # get 'usuarios/edit'
   # patch 'usuarios/update'
 

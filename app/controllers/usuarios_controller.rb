@@ -1,5 +1,5 @@
 class UsuariosController < ApplicationController
-  layout false
+  layout 'dashboard'
   
   def new
     @usuario = Usuario.new
@@ -8,8 +8,10 @@ class UsuariosController < ApplicationController
   def create
     @usuario = Usuario.new(usuario_params)
     if @usuario.save
-      redirect_to login_path, notice: 'Cadastro realizado com sucesso. Por favor, faça o login.'
+      flash[:notice] = 'Cadastro realizado com sucesso. Por favor, faça o login.'
+      redirect_to login_path
     else
+      flash.now[:alert] = "Houve um erro ao cadastrar o usuário."
       render 'new'
     end
   end
