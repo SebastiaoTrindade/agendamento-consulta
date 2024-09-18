@@ -1,9 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  usuario: one
+  nome: MyString
+  email: MyString
+  telefone: MyString
   especialidade: MyString
 
 two:
-  usuario: two
+  nome: MyString
+  email: MyString
+  telefone: MyString
   especialidade: MyString

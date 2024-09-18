@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>AgendamentoConsultas</title>
+    <title>Agendamento de Consultas</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    
   </head>
 
-  <body>  
+  <body>      
     <% if notice %>
       <div class="alert alert-success" id="flash_notice">
         <%= notice %>
@@ -33,7 +34,7 @@
         if (alertElement) {
           alertElement.style.display = 'none';
         }
-      }, 5000); // 5000 milissegundos = 5 segundos
+      }, 2000); // 2000 milissegundos = 2 segundos
     </script>
     
     <%= yield %>

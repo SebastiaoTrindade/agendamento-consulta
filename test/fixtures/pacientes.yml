@@ -2,12 +2,18 @@
 
 one:
   nome: MyString
-  email: MyString
-  telefone: MyString
-  data_nascimento: 2024-08-29
+  data_nascimento: 2024-09-07
+  nome_responsavel: MyString
+  email_responsavel: MyString
+  endereco: MyString
+  data_cadastro: 2024-09-07
+  historico_medico: MyText
 
 two:
   nome: MyString
-  email: MyString
-  telefone: MyString
-  data_nascimento: 2024-08-29
+  data_nascimento: 2024-09-07
+  nome_responsavel: MyString
+  email_responsavel: MyString
+  endereco: MyString
+  data_cadastro: 2024-09-07
+  historico_medico: MyText

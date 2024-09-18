@@ -1,0 +1,78 @@
+<!-- Inicio Sidebar -->
+<div class="navigation">
+    <ul>
+        <li>
+            <a href="">
+                <span class="icon">
+                    <ion-icon name="business-outline"></ion-icon>
+                </span>
+                <span class="title">Empresa</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="<%= dashboard_path %>">
+                <span class="icon">
+                    <ion-icon name="home-outline"></ion-icon>
+                </span>
+                <span class="title">Dashboard</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="<%= new_usuario_path %>">
+                <span class="icon">
+                    <ion-icon name="people-outline"></ion-icon>
+                </span>
+                <span class="title">Usuários</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="<%= new_paciente_path %>">
+                <span class="icon">
+                    <ion-icon name="body-outline"></ion-icon>
+                </span>
+                <span class="title">Pacientes</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="#">
+                <span class="icon">
+                    <ion-icon name="calendar-outline"></ion-icon>
+                </span>
+                <span class="title">Agendamentos</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="<%= new_psicopedagogo_path %>">
+                <span class="icon">
+                    <ion-icon name="medical-outline"></ion-icon>
+                </span>
+                <span class="title">Psicopedagogos</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="">
+                <span class="icon">
+                    <ion-icon name="lock-closed-outline"></ion-icon>
+                </span>
+                <span class="title">Senhas</span>
+            </a>
+        </li>
+
+        <li>
+            <%= link_to logout_path, method: :delete, data: { confirm: "Tem certeza que deseja sair?", turbolinks: false }, class: '' do %>
+                <span class="icon">
+                <ion-icon name="log-out-outline"></ion-icon>
+                </span>
+                <span class="title">Sign out</span>
+            <% end %>
+        </li>
+
+    </ul>
+</div>
+<!-- Fim Sidebar -->

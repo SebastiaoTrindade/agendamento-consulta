@@ -11,7 +11,6 @@ gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
 gem 'bootstrap', '~> 5.3.0'
-gem 'sass-rails'
 gem 'sassc-rails'
 gem 'jquery-rails'
 gem 'popper_js', '~> 2.0'

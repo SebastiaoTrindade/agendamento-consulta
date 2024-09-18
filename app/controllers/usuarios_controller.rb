@@ -1,18 +1,17 @@
 class UsuariosController < ApplicationController
-  layout 'dashboard'
+  layout false
   
   def new
-    @usuario = Usuario.new
+    @usuario = Usuario.new    
   end
 
   def create
     @usuario = Usuario.new(usuario_params)
-    if @usuario.save
-      flash[:notice] = 'Cadastro realizado com sucesso. Por favor, faça o login.'
-      redirect_to login_path
+    if @usuario.save      
+      redirect_to usuarios_path, notice: 'Usuário cadastrado com sucesso.'
     else
       flash.now[:alert] = "Houve um erro ao cadastrar o usuário."
-      render 'new'
+      render :new
     end
   end
 

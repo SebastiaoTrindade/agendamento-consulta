@@ -1,9 +1,9 @@
 class DashboardController < ApplicationController
   before_action :require_login
-
-  layout false
+  layout 'dashboard'
 
   def index
+    @usuario = Usuario.new    
   end
 
   private
