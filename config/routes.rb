@@ -24,6 +24,7 @@ Rails.application.routes.draw do
 
   # Rota para o dashboard
   get 'dashboard', to: 'dashboard#index'
+  #get 'dashboard/usuarios', to: 'dashboard#usuarios'
 
   # Rotas para psicopedagogos
   resources :psicopedagogos, only: [:new, :create]

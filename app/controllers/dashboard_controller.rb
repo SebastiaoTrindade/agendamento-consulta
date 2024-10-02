@@ -6,6 +6,10 @@ class DashboardController < ApplicationController
     @usuario = Usuario.new    
   end
 
+  def usuarios
+    
+  end
+
   private
 
   def require_login

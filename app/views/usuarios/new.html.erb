@@ -7,19 +7,23 @@
     <!--Styles CSS-->
     <%= stylesheet_link_tag 'style', media: 'all' %>
 </head>
-<body>
-    
-    <div class="container">
-        <!--########## Sidebar ##########-->
-        <%= render 'pages/sidebar'%>
+<body id="page-top">
 
-        <!--########## Main ##########-->
-        <%= render 'pages/content' %>  
-             
+    <div id="wrapper">
+    
+        <div class="container">
+            <!--########## Sidebar ##########-->
+            <%= render 'pages/sidebar'%>
+
+            <!--########## Main ##########-->
+            <%= render 'pages/content' %>     
+                     
+                        
+        </div>   
         
-    </div>     
-
-    
+        
+    </div>    
+   
 
     <!--Scripts JS-->
     <%= javascript_include_tag 'main', 'data-turbolinks-track': 'reload' %>

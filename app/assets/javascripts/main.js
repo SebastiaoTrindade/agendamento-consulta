@@ -39,3 +39,5 @@ toggle.onclick = function () {
 
   // Atualiza a hora a cada segundo
   setInterval(updateTime, 1000);
+
+  
